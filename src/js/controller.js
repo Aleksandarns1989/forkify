@@ -13,13 +13,9 @@ import 'regenerator-runtime/runtime';
 import bookmarksView from './views/bookmarksView.js';
 import { async } from 'regenerator-runtime';
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
 
-// console.log(icons);
 
-// https://forkify-api.herokuapp.com/v2
+
 
 ///////////////////////////////////////
 
@@ -135,9 +131,7 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const newFeature = function(){
-  console.log('Welcome to the application!');
-}
+
 
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -147,6 +141,6 @@ const init = function () {
   searchView.addHandlerSearch(controleSearchResults);
   paginationView.addHandlerClick(controlePagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
+  
 };
 init();
